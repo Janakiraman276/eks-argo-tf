@@ -104,7 +104,7 @@ variable "eks_managed_node_groups" {
       min_size       = 1
       max_size       = 1
       desired_size   = 1
-      instance_types = ["t2.meduim"]
+      instance_types = ["t2.medium"]
     }
   }
 }
