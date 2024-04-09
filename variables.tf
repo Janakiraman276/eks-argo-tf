@@ -86,7 +86,7 @@ variable "cluster_addons" {
 
 variable "default_instance_types" {
   type    = list(string)
-  default = ["t2.medium"]
+  default = ["t3a.large"]
 }
 
 variable "eks_managed_node_groups" {
@@ -104,7 +104,7 @@ variable "eks_managed_node_groups" {
       min_size       = 1
       max_size       = 1
       desired_size   = 1
-      instance_types = ["t2.medium"]
+      instance_types = ["t3a.large"]
     }
   }
 }
